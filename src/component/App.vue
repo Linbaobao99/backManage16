@@ -1,23 +1,15 @@
 <template>
-    <div>
-        {{val}}
-        <router-view></router-view>
-    </div>
+    <router-view></router-view>
 </template>
 
 <script>
     export default {
-        data() {
-            return {
-                val: '这是测试Vue'
-            }
-        },
+        mounted(){
+            this.$router.push({name:'admin'})
+        }
     }
 </script>
 
 <style scoped>
-div{
-    color: aquamarine;
-    font-size: 30px;
-}
+
 </style>
